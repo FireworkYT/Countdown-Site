@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="/index.css" />
+	</script>
+	<script src="/index.js">
+
+	</script>
+	<title>Countdown</title>
+	<script>
+		function myFunction() {
+  alert("Hello! I am an alert box!");
+}
+
+	</script>
+
+</head>
+
+<body>
+	<div class="bgimg">
+		<div class="topleft">
+			<p> | <a href="https://repl.it/@AydenB/countdown-to-2020">Source Code</a> </br> | <a href="https://firework--aydenb.repl.co/about.html">About
+					</a> </br> |
+				<a href="https://firework--aydenb.repl.co/loadingp.html
+">More Projects </a>
+		</div>
+		<div class="middle">
+			<h1>Time until 2020:</h1>
+			<p id="demo"></p>
+		</div>
+		<div class="bottomleft">
+			<p>Created with ❤️ by Firework</p>
+
+			<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+			 href="https://unsplash.com/@fathomfilms?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+			 target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Sylas Boesten"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Sylas Boesten</span></a>
+  </div>
+<div class="topleft">
+<p> </p>
+</div>
+<script>
+var countDownDate = new Date("Jan 1, 2020 12:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Happy New year!";
+  }
+}, 1000);
+
+</script>
+
+
+</div>
+
+    <p>By visting this site you agree to our <a href="https://backend--aydenb.repl.co" style="color:dodgerblue">Terms & Privacy</a></p>
+
+</body>
+</html>
